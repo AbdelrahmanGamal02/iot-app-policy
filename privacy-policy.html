@@ -1,73 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy</title>
-
-<style>
-body { font-family: Arial; padding: 20px; background:#f5f6f8; }
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-h1 { color: #1976D2; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Unimog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="container">
+    <div class="card">
+      <a id="back-to-home" class="back-link" href="index.html">← Back to Portal</a>
+      
+      <h1>Privacy Policy</h1>
+      <div class="meta">Last Updated: June 2026</div>
 
-<div class="container">
+      <h2>1. Overview</h2>
+      <p>
+        This Privacy Policy explains how <strong>Unimog V-7993</strong> ("the App"), developed by AbdelrahmanGamal02, handles information. The App is a mobile utility designed to allow users to configure and remotely control hardware relay boards.
+      </p>
 
-<h1>Privacy Policy</h1>
+      <h2>2. Information We Collect and Process</h2>
+      <p>
+        The App is designed with privacy in mind. We minimize data collection to only what is necessary for functional hardware control:
+      </p>
+      <ul>
+        <li><strong>Local Configuration Data:</strong> The App stores your added hardware boards, custom names, icons, and serial numbers locally on your device. This data never leaves your device unless sent to your configured MQTT broker.</li>
+        <li><strong>Network Information:</strong> To perform Wi-Fi setup (SmartConfig) for your relay boards, the App requires access to network state details.</li>
+        <li><strong>Camera Permission:</strong> The App asks for camera permission solely to scan QR codes on hardware boards for easy onboarding (serial number detection). Scanning is performed entirely on-device; no images are uploaded.</li>
+      </ul>
 
-<p><strong>Last Updated:</strong> June 2026</p>
+      <h2>3. Third-Party Services and MQTT Broker</h2>
+      <p>
+        The App communicates with hardware boards using the MQTT protocol. You are responsible for configuring the MQTT broker endpoint. The data transmitted consists of control messages (e.g., turning a relay on or off) and status updates. We do not host or monitor your private MQTT traffic.
+      </p>
 
-<h2>Overview</h2>
-<p>
-This application "IoT Relay Control" is used to remotely control IoT devices and relay modules.
-</p>
+      <h2>4. Data Sharing and Sale</h2>
+      <p>
+        We do <strong>not</strong> collect personal identity information, and we do <strong>not</strong> sell, rent, or share any data with third parties.
+      </p>
 
-<h2>Data Collection</h2>
-<p>
-We may collect:
-<ul>
-<li>Device information (for connection purposes)</li>
-<li>App usage data</li>
-<li>Network information</li>
-</ul>
-We do NOT sell or share personal data with third parties.
-</p>
+      <h2>5. Security</h2>
+      <p>
+        Since data is stored locally and sent over your designated MQTT broker, the security of your communication depends on your Wi-Fi network security and your MQTT broker credentials. We recommend using secure MQTT endpoints (MQTTS) and robust passwords.
+      </p>
 
-<h2>How We Use Data</h2>
-<p>
-Data is used only to:
-<ul>
-<li>Operate IoT device control features</li>
-<li>Improve app performance</li>
-<li>Ensure secure communication with devices</li>
-</ul>
-</p>
+      <h2>6. Contact Us</h2>
+      <p>
+        If you have any questions or feedback regarding this Privacy Policy, please contact us at:
+      </p>
+      <p style="font-weight: 500;">
+        Email: <a href="mailto:bebo2002elkhateeb@gmail.com" style="color: var(--primary); text-decoration: none;">bebo2002elkhateeb@gmail.com</a>
+      </p>
 
-<h2>Third-Party Services</h2>
-<p>
-The app may use services such as cloud servers or MQTT brokers to communicate with devices.
-</p>
-
-<h2>Security</h2>
-<p>
-We take reasonable measures to protect user data, but no system is 100% secure.
-</p>
-
-<h2>Contact</h2>
-<p>
-For any questions: support@yourdomain.com
-</p>
-
-</div>
-
+      <div class="footer">
+        © 2026 AbdelrahmanGamal02. All rights reserved.
+      </div>
+    </div>
+  </div>
 </body>
 </html>
